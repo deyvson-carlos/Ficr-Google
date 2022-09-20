@@ -6,3 +6,16 @@ function mostrarSenha(){
      senha.type = "password";
     }
  } 
+
+ function logar(){
+    var email = document.getElementById('email').value;
+    var senha = document.getElementById('senha').value;
+
+    if(email == "deyvson@ficr.com" && senha == "123"){
+        alert('Usuário logado com Sucesso!');
+        location.href = "logado.html";
+    }
+    else{
+        alert('Usuário ou senha incorretos!');
+    }
+ }
